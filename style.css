@@ -1,0 +1,46 @@
+.delete-icon {
+  color: black !important;
+  display: flex;
+}
+
+.collapsible-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#job-name {
+  display: flex;
+  align-items: flex-end;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  background: #F8F8F8;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-top: 95vh solid #0091ea;
+  border-right: 60vw solid transparent;
+}
+
+body:after {
+  content: '';
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-top: 95vh solid #0091ea;
+  border-left: 60vw solid transparent;
+  top: 0%;
+  left: 40%;
+  z-index: 1;
+}
+

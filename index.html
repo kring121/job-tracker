@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Job Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title">Job Tracker</span>
+            <div class="row">
+              <form id="job-form">
+                <div class="input-field col s12">
+                  <input type="text" name="company" id="company" class="validate" required="" aria-required="true">
+                  <label for="company">Company</label>
+                </div>
+                <div class="input-field col s12">
+                  <input type="text" name="link" id="link">
+                  <label for="link">Link</label>
+                </div>
+                <div class="input-field col s12">
+                  <input type="text" name="date" class="datepicker" id="date">
+                  <label for="date">Date Applied</label>
+                </div>
+                <div class="input-field col s12">
+                  <input type="text" name="description" class="description">
+                  <label for="description">Description of Role</label>
+                </div>
+                <input type="submit" value="Add Job" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="job-title">Jobs</h5>
+            <div class="input-field col s12">
+              <input type="text" name="filter" id="filter">
+              <label for="filter">Filter Jobs</label>
+            </div>
+            <ul class="collapsible">
+            </ul>
+            <a href="#" class="clear-jobs btn black">Clear Jobs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
